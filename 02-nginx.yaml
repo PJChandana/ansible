@@ -9,4 +9,4 @@
   - name: run nginx
     ansible.builtin.service:
       name: nginx
-      sate: started
+      state: started

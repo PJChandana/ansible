@@ -7,7 +7,7 @@
     Duration: "110hrs"
   tasks:
   - name: check variables
-    vars: # task level
+    vars: #task level
       Course: "Devops with AWS"
     ansible.bultin.debug:
       msg: "Hi, I am learning Course {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}"

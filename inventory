@@ -6,14 +6,14 @@
 192.235.3.2
 
 [catalogue]
+192.235.3.3
 192.235.3.4
-192.235.3.5
 
 [cart]
+192.235.3.5
 192.235.3.6
-192.235.3.7
 
-[roboshop.children]
+[roboshop:children]
 web
 catalogue
 cart

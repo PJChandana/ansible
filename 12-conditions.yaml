@@ -1,0 +1,12 @@
+- name: conditions
+  hosts: localhost
+  tasks:
+  - name: check roboshop users or not
+    ansible.builtin.debug:
+    register: user # user is variale name
+    ignore_erros: True # ansible will not exit even got error
+
+  - name: print variable value
+    ansible.builtin.debug:
+      msg: "User output is: {{user}}"
+      

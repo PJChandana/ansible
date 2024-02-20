@@ -1,0 +1,30 @@
+- name: variables from PLAY level
+  hosts: localhost
+  vars:
+    NAME: Chandana # keyvalue
+    SKILLS: # skills list type
+    - Docker
+    - Ansible
+    - Linux
+    - AWS
+    Experience: # Experience is map type contains value pairs
+      Devops: 3
+      Docker: 1
+      AWS: 3
+     Trainer: true # Boolean
+  tasks:
+    - name: print key value pair
+    ansible.builtin.debug: 
+      msg: "NAME: {{NAME}}"
+
+    - name: print list
+    ansible.buitlin.debug:
+      msg: "Skills: {{SKILLS}}"
+
+    - name: print list
+    ansible.builtin.debug:
+      msg: "Experience: {{Experience}}"
+
+    - name: print map
+    ansible.builtin.debug:
+      msg: "Trainer: {{Trainer}}"

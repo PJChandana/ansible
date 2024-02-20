@@ -5,7 +5,6 @@
     ansible.builtin.debug: id roboshop
     register: user # user is variable name
    
-
   - name: print variable value
     ansible.builtin.debug:
       msg: "User output is: {{user}}"

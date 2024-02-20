@@ -18,7 +18,7 @@
       msg: "name: {{NAME}}"
 
   - name: print list
-    ansible.buitlin.debug:
+    ansible.builtin.debug:
       msg: "Skills: {{Skills}}"
 
   - name: print map

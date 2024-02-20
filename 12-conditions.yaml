@@ -4,8 +4,13 @@
   - name: check roboshop user exists or not
     ansible.builtin.debug: id roboshop
     register: user # user is variable name
+    ignore_erros: true # ansible will not exit even got error
    
   - name: print variable value
     ansible.builtin.debug:
       msg: "User output is: {{user}}"
+
+  - name: print exit status or return code
+    ansible.builtin.debug:
+      msg: "status is {{user.rc}}"
       

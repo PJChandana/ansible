@@ -1,10 +1,10 @@
 - name: conditions
   hosts: localhost
   tasks:
-  - name: check roboshop user exists or not
+  - name: check roboshopuser exists or not
     ansible.builtin.debug: id roboshop
-    register: user # user is variable name
-    ignore_erros: true # ansible will not exit even got error
+    register: user  # user is variable name
+    ignore_erros: true  # ansible will not exit even got error
    
   - name: print variable value
     ansible.builtin.debug:

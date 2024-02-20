@@ -11,7 +11,7 @@
       Devops: 3
       Docker: 1
       AWS: 3
-     Trainer: true # Boolean
+    Trainer: true # Boolean
   tasks:
     - name: print key value pair
     ansible.builtin.debug: 

@@ -1,4 +1,4 @@
-- name: variables from PLAY level
+- name: checking data types
   hosts: localhost
   vars:
     NAME: Chandana # keyvalue
@@ -7,7 +7,7 @@
     - Ansible
     - Linux
     - AWS
-    Experience: # Experience is map type contains value pairs
+    Experience: # Experience is map type contains key value pairs
       Devops: 3
       Docker: 1
       AWS: 3

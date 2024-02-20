@@ -14,8 +14,8 @@
     WISHES: "Evening from PLAY"
   tasks:
   - name: check variables
-    vars:
-      PERSON: "Chandana from Task"
-      WISHES: "Evening from Task"
+    # vars:
+    #   PERSON: "Chandana from Task"
+    #   WISHES: "Evening from Task"
     ansible.builtin.debug:
       msg: "Hello {{PERSON}}, Good {{WISHES}}"

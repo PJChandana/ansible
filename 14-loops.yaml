@@ -2,7 +2,7 @@
   hosts: localhost
   become: yes
   tasks:
-    - name: print persons
+  - name: print persons
     ansible.builtin.debug:
       name: "{{item}}"
       state: present

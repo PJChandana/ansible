@@ -7,5 +7,5 @@
       state: "{{item.state}}"  #item is a default keyword
     loop:
     - {name: 'git', state: 'present'} #item
-    - {name: 'postfix', state: 'absent'}
+    - {name: 'postfix', state: 'present'}
     - {name: 'mysql', state: 'present'}

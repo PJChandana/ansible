@@ -1,0 +1,17 @@
+- name: ping playbook
+  hosts: localhost
+  tasks:
+  - name: ping the server
+    ansible.builtin.ping:
+
+- name: print message
+  ansible.builtin.package:
+    msg: "Hello Devops"
+  tags:
+  - devops
+
+- name: print message
+  ansible.builtin.service:
+    name: "Hello AWS"
+  tags:
+  - aws

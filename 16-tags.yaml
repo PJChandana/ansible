@@ -5,13 +5,13 @@
     ansible.builtin.ping:
 
 - name: print message
-  ansible.builtin.package:
+  ansible.builtin.debug:
     msg: "Hello Devops"
   tags:
   - devops
 
 - name: print message
-  ansible.builtin.service:
+  ansible.builtin.debug:
     name: "Hello AWS"
   tags:
   - aws
